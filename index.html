@@ -1,0 +1,247 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>BrightStar Cleaning Co.</title>
+
+<style>
+
+*{box-sizing:border-box}
+
+body{margin:0;font-family:Arial,sans-serif;color:#203047;line-height:1.6}
+
+header{background:#102a49;color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+
+header a{color:white;text-decoration:none;margin:8px}
+
+.hero{background:linear-gradient(120deg,#102a49,#1459b8);color:white;padding:85px 7%;text-align:center}
+
+.hero h1{font-size:clamp(38px,7vw,64px);line-height:1.1;margin:10px}
+
+.hero p{font-size:18px;max-width:650px;margin:20px auto}
+
+.btn{display:inline-block;background:#39b94a;color:white;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:8px}
+
+section{padding:60px 7%}
+
+h2{text-align:center;color:#102a49;font-size:34px}
+
+.intro{text-align:center;color:#63748a}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:30px}
+
+.card{padding:25px;border:1px solid #e2eaf3;border-radius:16px;box-shadow:0 8px 25px #102a4910}
+
+.card h3{color:#1459b8}
+
+.about{background:#f4f8fd}
+
+.contact{background:#eef5fd}
+
+form{max-width:600px;margin:25px auto;background:white;padding:25px;border-radius:16px}
+
+label{display:block;margin-top:14px;font-weight:bold}
+
+input,select,textarea{width:100%;padding:12px;margin-top:6px;border:1px solid #ccd7e5;border-radius:8px;font:inherit}
+
+textarea{min-height:110px}
+
+button{border:0;cursor:pointer;font-size:16px}
+
+footer{background:#0b2038;color:white;padding:30px;text-align:center}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<strong>🏠 BrightStar Cleaning Co.</strong>
+
+<nav>
+
+<a href="#home">Home</a>
+
+<a href="#services">Services</a>
+
+<a href="#about">About</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<main>
+
+<section class="hero" id="home">
+
+<p>PROFESSIONAL CLEANING SERVICES</p>
+
+<h1>A Cleaner Home.<br>A Happier Life.</h1>
+
+<p>Come home to a space that feels fresh, calm, and cared for. We offer cleaning options for homes and workplaces.</p>
+
+<a class="btn" href="#contact">Get a Free Quote</a>
+
+<a class="btn" href="#services">Explore Services</a>
+
+</section>
+
+<section id="services">
+
+<h2>Cleaning That Fits Your Life</h2>
+
+<p class="intro">Choose the service that works best for your space.</p>
+
+<div class="cards">
+
+<div class="card"><h3>🏠 Home Cleaning</h3><p>Cleaning for living rooms, bedrooms, kitchens, and everyday spaces.</p></div>
+
+<div class="card"><h3>🏢 Office Cleaning</h3><p>Keep your workplace neat, welcoming, and ready for the day.</p></div>
+
+<div class="card"><h3>✨ Deep Cleaning</h3><p>Extra attention for areas that need a thorough clean.</p></div>
+
+<div class="card"><h3>📦 Moving Cleaning</h3><p>Cleaning help when moving into or out of a property.</p></div>
+
+<div class="card"><h3>📅 Regular Cleaning</h3><p>Ask about weekly, biweekly, or monthly cleaning visits.</p></div>
+
+<div class="card"><h3>🛁 Kitchen & Bathroom</h3><p>Focused cleaning for important areas of your home.</p></div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>Good Service Starts With Care</h2>
+
+<p class="intro">We believe in clear communication, careful work, and attention to detail.</p>
+
+<div class="cards">
+
+<div class="card"><h3>Clear Estimates</h3><p>Understand the service and expected price before booking.</p></div>
+
+<div class="card"><h3>Flexible Scheduling</h3><p>Discuss a time that works for your needs.</p></div>
+
+<div class="card"><h3>Careful Service</h3><p>Every space deserves thoughtful attention.</p></div>
+
+</div>
+
+</section>
+
+<section id="process">
+
+<h2>How It Works</h2>
+
+<div class="cards">
+
+<div class="card"><h3>1. Tell Us</h3><p>Explain your property and cleaning needs.</p></div>
+
+<div class="card"><h3>2. Get an Estimate</h3><p>Review the service details and price.</p></div>
+
+<div class="card"><h3>3. Confirm</h3><p>Agree on the date and service plan.</p></div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Request a Free Quote</h2>
+
+<p class="intro">Complete this sample form to prepare an email request.</p>
+
+<form id="quoteForm">
+
+<label for="name">Your Name *</label>
+
+<input id="name" required placeholder="Your full name">
+
+<label for="email">Email Address *</label>
+
+<input id="email" type="email" required placeholder="you@example.com">
+
+<label for="service">Service Needed *</label>
+
+<select id="service" required>
+
+<option value="">Choose a service</option>
+
+<option>Home Cleaning</option>
+
+<option>Office Cleaning</option>
+
+<option>Deep Cleaning</option>
+
+<option>Moving Cleaning</option>
+
+<option>Regular Cleaning</option>
+
+<option>Kitchen & Bathroom</option>
+
+</select>
+
+<label for="details">Tell Us More *</label>
+
+<textarea id="details" required placeholder="Describe what you need"></textarea>
+
+<button class="btn" type="submit">Prepare Quote Request</button>
+
+<p id="status"></p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>© <span id="year"></span> BrightStar Cleaning Co.</p>
+
+<p>Sample website — replace demo details before using for a real business.</p>
+
+</footer>
+
+<script>
+
+document.getElementById("year").textContent=new Date().getFullYear();
+
+document.getElementById("quoteForm").addEventListener("submit",function(event){
+
+event.preventDefault();
+
+const name=document.getElementById("name").value;
+
+const email=document.getElementById("email").value;
+
+const service=document.getElementById("service").value;
+
+const details=document.getElementById("details").value;
+
+const body=encodeURIComponent(
+
+"Name: "+name+"\nEmail: "+email+"\nService: "+service+"\nDetails: "+details
+
+);
+
+document.getElementById("status").textContent="Opening your email app to prepare the request. This demo does not send it automatically.";
+
+window.location.href="mailto:?subject="+encodeURIComponent("Cleaning quote request")+"&body="+body;
+
+});
+
+</script>
+
+</body>
+
+</html>
